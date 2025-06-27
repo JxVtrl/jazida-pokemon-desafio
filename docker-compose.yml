@@ -20,7 +20,7 @@ services:
     volumes:
       - ./backend:/app
     ports:
-      - "3001:3001"
+      - "4001:4001"
     depends_on:
       - postgres
     environment:
@@ -30,18 +30,20 @@ services:
       DB_PASSWORD: postgres
       DB_NAME: jazida
     command: npm run dev
-  # frontend:
-  #   build:
-  #     context: ./frontend
-  #   container_name: jazida-frontend
-  #   volumes:
-  #     - ./frontend:/app
-  #   ports:
-  #     - "5173:5173"
-  #   depends_on:
-  #     - backend
-  #   environment:
-  #     NODE_ENV: development
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: jazida-frontend
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    environment:
+      NODE_ENV: development
+      PORT: 5173
 
 volumes:
   db_data:
