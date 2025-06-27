@@ -1,0 +1,6 @@
+[submodule "frontend"]
+	path = frontend
+	url = git@github.com:JxVtrl/jazida-pokemon-frontend.git
+[submodule "backend"]
+	path = backend
+	url = git@github.com:JxVtrl/jazida-pokemon-backend.git
