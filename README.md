@@ -1,5 +1,16 @@
 # 🧪 Desafio Técnico - Jazida Pokémon
 
+## 🌐 Ambientes de Deploy
+
+- **Frontend Produção:** [https://jazida.pokemon.majorssolutions.com.br](https://jazida.pokemon.majorssolutions.com.br)
+- **Backend Produção (API):** [https://jazida.api.majorssolutions.com.br](https://jazida.api.majorssolutions.com.br)
+- **Documentação da API:** [https://jazida.api.majorssolutions.com.br/api-docs](https://jazida.api.majorssolutions.com.br/api-docs)
+
+**Variável de ambiente do frontend para produção:**
+```env
+NEXT_PUBLIC_API_URL=https://jazida.api.majorssolutions.com.br
+```
+
 Este repositório contém a estrutura principal do desafio técnico para a vaga de Desenvolvedor(a) Fullstack no Jazida. A aplicação é dividida em dois submódulos Git:
 
 - [`frontend/`](./frontend): Interface inspirada no HUD clássico das batalhas de Pokémon.
