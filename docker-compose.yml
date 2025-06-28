@@ -19,6 +19,7 @@ services:
     container_name: jazida-backend
     volumes:
       - ./backend:/app
+      - uploads_data:/app/uploads
     ports:
       - "4001:4001"
     depends_on:
@@ -48,3 +49,4 @@ services:
 
 volumes:
   db_data:
+  uploads_data:
